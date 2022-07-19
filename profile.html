@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.dark.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.dark.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap/css/styles.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <title>Profile</title>
+</head>
+<body>
+
+<!-- Main Navbar -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a href="index.html" class="navbar-brand text-warning">
+            <span>
+                <i class="fab fa-jedi-order"></i> Maximus.inc
+            </span>
+        </a>
+
+        <button class="navbar-toggler" data-mdb-toggle="collapse" data-mdb-target="max-navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="max-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-chart-bar"></i> Dashboard</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="task.html" class="nav-link">
+                        <i class="fa fa-list"></i> Tasks</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="category.html" class="nav-link">
+                        <i class="fa fa-sitemap"></i> Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="employee.html" class="nav-link">
+                        <i class="fa fa-users"></i> Employees</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link" data-mdb-toggle="dropdown">
+                    <i class="fa fa-sign-in-alt"></i> Rajat</a>
+                <div class="dropdown-menu p-2">
+                    <a href="profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i> Profile</a>
+                    <a href="settings.html" class="dropdown-item"><i class="fa fa-cogs"></i> Settings</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                    <i class="fa fa-sign-out-alt"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Profile Section -->
+
+<section class="p-2 bg-teal">
+    <div class="container text-white">
+        <div class="row animate__animated animate__flipInY">
+            <h1><i class="fa fa-user-circle"></i> Profile</h1>
+        </div>
+    </div>
+</section>
+
+<!-- Button Section -->
+
+<section class="p-3 bg-light">
+    <div class="container">
+        <div class="row animate__animated animate__flipInX">
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-secondary btn-block">
+                    <i class="fa fa-arrow-alt-circle-left"></i> Dashboard
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <!-- Emplty -->
+            </div>
+
+            <div class="col-md-3">
+                <a href="#" class="btn btn-primary btn-block" data-mdb-toggle="modal" data-mdb-target="#password-modal">
+                    <i class="fa fa-lock"></i> Update Password
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#" class="btn btn-danger btn-block">
+                    <i class="fa fa-times-circle"></i> Delete Account
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Change Password Modal -->
+
+<div class="modal" id="password-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__flipInY">
+            <div class="modal-header bg-primary text-white">
+                <h3>Update Password</h3>
+                <button class="close" data-mdb-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body bg-light">
+                <form>
+                    <div class="form-group mt-2">
+                        <input type="password" placeholder="Old Password" class="form-control">
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <input type="password" placeholder="New Passowrd" class="form-control">
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <input type="password" placeholder=" Confirm Password" class="form-control">
+                    </div>
+
+                    <div class="mt-2">
+                        <input type="submit" value="Update Password" class="btn btn-primary">
+                        <a href="#" data-mdb-dismiss="modal" class="btn btn-dark">Close</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Profile Section -->
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card  animate__animated animate__jello">
+                    <div class="card-header bg-teal text-white">
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2>Rajat Gautam</h2>
+                            </div>
+                        </div>
+
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid, architecto autem beatae cum doloribus error eum iure maxime nesciunt nostrum obcaecati optio perferendis quam repudiandae suscipit tenetur voluptatibus. Ab.</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto at delectus hic impedit minus neque placeat quidem repudiandae sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h3>Thank You!!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card  animate__animated animate__slideInUp">
+                    <div class="card-header bg-teal text-white text-center">
+                        <h5>Rajat Gautam</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/me.jpeg" alt="" class="img-fluid img-thumbnail p-image">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-primary btn-block mt-3">
+                                    <i class="fa fa-pen-alt"></i> Edit Profile</button>
+                                <button class="btn btn-danger btn-block mt-3">
+                                    <i class="fa fa-trash-alt"></i> Delete Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Main Footer -->
+
+<footer class="p-3 bg-dark text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy 2021, Maximus.inc</h3>
+                <h6>All Rights Reserved</h6>
+                <h6>Developed & Maintained by
+                    <a class="text-warning" href="https://www.facebook.com/rajat.gautam.5454/" target="_blank">Rajat Gautam</a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----- Bootstrap JS Files ----->
+
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+
+</body>
+</html>
